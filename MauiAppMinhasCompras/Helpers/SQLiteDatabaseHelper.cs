@@ -5,7 +5,7 @@ public class SQLiteDatabaseHelper
 {
     readonly SQLiteAsyncConnection _conn;
 
-    public DatabaseHelper(string path) 
+    public SQLiteDatabaseHelper(string path) 
     {
         _conn = new SQLiteAsyncConnection(path);
         _conn.CreateTableAsync<Produto>().Wait();
